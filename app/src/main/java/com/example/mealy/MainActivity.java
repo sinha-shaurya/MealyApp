@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
         navigationView = findViewById(R.id.navigation_view);
         NavigationUI.setupWithNavController(navigationView, navController);
-        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
+        NavigationUI.setupActionBarWithNavController(this, navController, drawerLayout);
 
 
         navController.addOnDestinationChangedListener((controller, destination, arguments) -> {
@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onSupportNavigateUp() {
         NavHostFragment navHostFragment = (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.fragmentContainerView);
         NavController nav = navHostFragment.getNavController();
-        return NavigationUI.navigateUp(nav, appBarConfiguration) ||
+        return NavigationUI.navigateUp(nav, drawerLayout) ||
                 super.onSupportNavigateUp();
     }
 

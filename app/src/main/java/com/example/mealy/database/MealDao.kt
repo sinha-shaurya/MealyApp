@@ -16,8 +16,8 @@ interface MealDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun addMeal(meal: MealPlan)
 
-    @Query("SELECT * from meal_plan where day LIKE :day AND type LIKE :mealTime")
-    fun getDayMeal(day: String, mealTime: String): Flow<List<MealPlan>>
+    @Query("SELECT * from meal_plan where day LIKE '%'||:day||'%'")
+    fun getDayMeal(day: String): Flow<List<MealPlan>>
 
 
     @Delete
