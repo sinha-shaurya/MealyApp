@@ -11,7 +11,7 @@ import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.MealRepository
+import com.example.mealy.MealRepository
 import com.example.mealy.MealViewModel
 import com.example.mealy.MealViewModelFactory
 import com.example.mealy.adapters.MealTypeAdapter

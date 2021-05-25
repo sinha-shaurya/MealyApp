@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.navArgs
-import com.example.MealRepository
+import com.example.mealy.MealRepository
 import com.example.mealy.MealViewModel
 import com.example.mealy.MealViewModelFactory
 import com.example.mealy.database.MealDatabase

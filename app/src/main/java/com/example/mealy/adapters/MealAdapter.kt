@@ -15,8 +15,7 @@ class MealAdapter :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(item: MealPlan) {
             binding.mealName.text = item.mealItem
-
-
+            binding.mealQuantity.text = "x${item.quantity}"
         }
     }
 

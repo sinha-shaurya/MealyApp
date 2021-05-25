@@ -1,4 +1,4 @@
-package com.example
+package com.example.mealy
 
 import com.example.mealy.database.MealDao
 import com.example.mealy.database.MealPlan

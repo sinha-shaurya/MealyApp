@@ -9,7 +9,20 @@
         android:id="@+id/meal_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Eggs" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/meal_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_semibold"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/meal_name"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="x2" />
 </androidx.constraintlayout.widget.ConstraintLayout>

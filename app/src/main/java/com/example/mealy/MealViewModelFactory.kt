@@ -2,7 +2,6 @@ package com.example.mealy
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.example.MealRepository
 
 class MealViewModelFactory(val repository: MealRepository) : ViewModelProvider.Factory {
     @Suppress("UNCHECKED_CAST")
