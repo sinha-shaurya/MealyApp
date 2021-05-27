@@ -24,7 +24,8 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/meal_list"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/day_text"
             tools:itemCount="3"
             tools:listitem="@layout/meal_type_item" />
 

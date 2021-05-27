@@ -37,7 +37,7 @@ class DayScreen : Fragment(), DayAdapter.onItemClickListener {
         super.onViewCreated(view, savedInstanceState)
 
         //create adapter
-        val adapter = DayAdapter(this)
+        val adapter = DayAdapter(this, requireContext())
         binding.dayList.adapter = adapter
         binding.dayList.layoutManager = GridLayoutManager(this.context, 2)
         binding.dayList.hasFixedSize()

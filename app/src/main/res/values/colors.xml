@@ -7,4 +7,11 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="monday">#12005e</color>
+    <color name="tuesday">#000063</color>
+    <color name="wednesday">#4a0072</color>
+    <color name="thursday">#004c40</color>
+    <color name="friday">#006978</color>
+    <color name="saturday">#00363a</color>
+    <color name="sunday">#8e0000</color>
 </resources>

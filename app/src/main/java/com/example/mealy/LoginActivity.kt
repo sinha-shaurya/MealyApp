@@ -94,6 +94,7 @@ class LoginActivity : AppCompatActivity() {
                 } else {
                     if (task.exception is FirebaseAuthInvalidCredentialsException) {
                         Toast.makeText(this@LoginActivity, "Invalid OTP", Toast.LENGTH_SHORT).show()
+
                     }
                 }
             }
