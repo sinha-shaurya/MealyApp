@@ -112,10 +112,14 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun verifyCode(otp: String) {
-        val credential = PhoneAuthProvider.getCredential(storedVerificationId, otp)
+
         try {
+            val credential = PhoneAuthProvider.getCredential(storedVerificationId, otp)
             signInWithPhoneAuthCredential(credential)
         } catch (e: Exception) {
+            if (e is IllegalArgumentException) {
+                Toast.makeText(this, "Cannot create credential", Toast.LENGTH_SHORT).show()
+            }
             Toast.makeText(this, "Invalid Code", Toast.LENGTH_SHORT).show()
         }
 
